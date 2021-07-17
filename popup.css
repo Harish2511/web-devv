@@ -1,0 +1,36 @@
+* {box-sizing: border-box;}
+.obutton{
+    border: none;
+    color: royalblue;
+    background: none;
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.obutton:hover{
+    color:red;
+    text-shadow: 0px 0px 10px yellow;
+}
+.form-popup {
+    display: none;
+    position: fixed;
+    top:100px;
+    bottom: 200px;
+    right: 570px;
+    border: 3px solid #f1f1f1;
+    z-index: 9;
+    background-color: black;
+    color: wheat;
+    text-align: center;
+    padding:20px;
+    box-shadow: 0px 0px 10px red;
+  }
+  .btn{
+      background-color:tomato;
+      font-size: 25px;
+      color: black;
+      font-family: 'Times New Roman', Times, serif;
+  } 
+.btn:hover{
+   background-color: gray;
+   color: wheat;
+}

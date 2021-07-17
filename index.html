@@ -3,74 +3,175 @@
     <head>
         <meta charset="utf-8">
         <style>
-            body{
-                background-image: url("bg3.jpg");
-                background-attachment: fixed;
-            }
-           
-        </style>
-        <title>COVID-19</title>
-    </head>
-    <body  style="font-family: 'Times New Roman', Times, serif;">
-        <form style="background-color: brown;">
-            <fieldset>
-                <h1 style="text-align: center;"><a href="covid.html"><font color="white">COVID19 </font></a><a href="https://en.wikipedia.org/wiki/Coimbatore">
-                    <font color="black">COIMBATORE</font> </a></h1>
-             </fieldset>
-        </form>
-       <form style="background-color: black;">
-           <fieldset>
-            <font face="Times New Roman" size="4">
-                <p style="text-align:right;"><a href="#"><font color="white">  HOME  </font></a><font color="red">  +  </font> <a href="about us new.html"><font color="white">  ABOUT US  </font></a><font color="red">  +  </font><a href="#gallery"><font color="white">  Gallery  </font></a><font color="red">  +  </font><a href="#contact"><font color="white">CONTACT US</font></a></p>
-            </font>
-        </fieldset>
-       </form>
-       <br>
+            
+            .cardl{ 
+       background-clip:border-box;
+       border: dotted 5px black;
+       padding: 20px;
+       background: none;
+      margin-bottom: 20px;
+       }
+       .cardr{
+        padding: 20px;
+       margin: 20px;
+       background: green;
+       }
+       .leftcolumn {  
+  float: left;
+  width: 75%;
+  padding-right: 10px;
+  background: none;
+}
+.rightcolumn {
+  float: left;
+  width: 25%;
+  background-color: gray;
+}
 
-        <hr>
+        </style>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="social.css">
+        <link rel="stylesheet" href="popup.css">
+        <title>COVID-19</title>
+        <script type="text/javascript">
+            window.onload = function(){ 
+                            alert("Welcome To our Page :)");
+                            }
+                        function tq(){ 
+                            return"Thanks for visiting our webpage!!";
+                            }      
+        </script>
+    </head>
+    <body style="font-family: 'Times New Roman', Times, serif;overflow-x: hidden;" onbeforeunload="return tq()">  
+        <button onclick="topFunction()" id="myBtn" title="Go to top">▲</button>
+        <script type="text/javascript" src="scroll.js">
+        </script>    
+               <div class="title">
+                <h1 style="text-align: center;"><a href="covid.html"><span class="headcov">COVID19 </span></a><a href="https://en.wikipedia.org/wiki/Coimbatore">
+                    <span class="headcoi">COIMBATORE</span></font> </a></h1></div>
+                    <div class="header"><div id="mySidepanel" class="sidepanel">
+                            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+                            <a href="#">Home</a>
+                            <a href="about us new.html">About us</a>
+                            <a href="index.html#gallery">Gallery</a>
+                            <a href="#contact">Contact</a>
+                          </div>
+                        <p style="float: left;background-color: black;"><button class="openbtn" onclick="openNav()" >☰ Menu</button></p></div>
+                        <!--<ul><font size="4">
+                            <li><a href="#">Home</a></li><p style="color: red;">&emsp; + &emsp;</p>
+                            <li><a href="about us new.html">About us</a></li><p style="color: red;">&emsp; + &emsp;</p>
+                            <li><a href="index.html#gallery">Gallery</a></li><p style="color: red;">&emsp; + &emsp;</p>
+                            <li><a href="#contact">Contact us</a></li>
+                        </font></ul>--> 
+                        <br><br><br><br>
+                        <script>
+                            function openNav() {
+                              document.getElementById("mySidepanel").style.width = "250px";
+                            }
+                            
+                            function closeNav() {
+                              document.getElementById("mySidepanel").style.width = "0";
+                            }
+                            function vid(){
+                                alert("Video started playing....");
+                            }
+                            function end(){
+                                alert("Video has ended");
+                            }
+                            </script>
+                            <br>
+        <div class="leftcolumn">
+            <div class="cardl">
         <table align="center" border="1">
             <tr>
                 <td>
-                    <img src="cov.gif" height="250" width="300" align="left" usemap="#co-info">
+                    <img src="cov.gif" height="250" width="300" align="left" usemap="#co-info" class="map1">
                 </td>
                 <td>
                     <marquee behaviour="scroll" direction="up"><ul type="square">
-                    <font size="6"><li>The daily caseload of COVID-19 breached the<br> 5,000-mark  in Coimbatore</li>
+                    <font size="6" color="red"><li>The daily caseload of COVID-19 breached the<br> 5,000-mark  in Coimbatore</li>
                         <li>Officially,covid19 toll in peak</li>
-            <li>Coimbatore continues to see a surge !!!</li></ul></marquee></td>
-            </tr>
-
-        </table></font>
-        <hr>
-        <map name="co-info">
-            <area shape="rect" title="covidimage" coords="0,0,300,250" target="blank" href="covid.html">
+            <li>Coimbatore continues to see a surge !!!</li></font></ul></marquee></td>
+                    </tr>
+        </table></div></div>
+    <div class="rightcolumn">
+        <div class="cardr">
+            <p style="text-align: center;"><img src="divright1.gif" width="300" height="250" ></p>
+        </div></div>
+        <div class="leftcolumn">
+            <div class="cardl">
+        <map name="co-info" class="map1">
+            <area shape="rect" title="covidimage" coords="0,0,300,250" target="blank" href="covid.html" class="map1">
         </map>
-        <p style="text-align: center;"><img src="live1.png" usemap="#live" height="700" width="600"></p>
+        <p style="text-align: center;"><img src="live1.png" usemap="#live" height="700" width="600" class="map1"></p>
         <map name="live">
             <area shape="rect" title="covidimage" coords="0,0,600,700" target="blank" href="https://www.covid19india.org/state/TN">
-        </map>
-        <hr>
-        <marquee behavior="scroll" direction="left"><font face="Times New Roman" color="green" size="5">Maintain Social Distancing!  Wear Mask!!  Let's fight against COVID!!!</font></marquee>
-        <br><br>
-        <table align="center">
+        </map></div>
+    </div>
+        <div class="rightcolumn">
+        <div class="cardr">
+
+           <p style="text-align: center;"><img src="do.gif" width="300" height="700"></p>
+        </div></div>
+        <div class="leftcolumn">
+            <div class="cardl">
+                <marquee behavior="scroll" direction="left"><font face="Times New Roman" color="green" size="5">Maintain Social Distancing!  Wear Mask!!  Let's fight against COVID!!!</font></marquee>
+                <table align="center">
             <tr>
                 <td><h3><font size="8">AREA wise Cases :</font></h3>
-                    <p><font size="6">
-                       <ul type="disc">
-                           <li><a href="1.html">Coimbatore-North</a></li>
-                           <li><a href="2.html">Coimbatore-South</a></li>
-                           <li><a href="3.html">Sulur</a></li>
-                           <li><a href="4.html">Mettupalayam</a></li>
-                           <li><a href="5.html">Pollachi</a></li>
-                           <li><a href="6.html">Valparai</a></li></td>
-        
-                </ul>
+                    <script type="text/javascript">
+                    function search()
+                    {
+                        var a = prompt("Please enter the area that you want to know:");
+                        a=String(a);
+                        if(a=="Coimbatore-North")
+                        {
+                            open("1.html");
+                        }
+                        else if (a=="Coimbatore-South") {
+                            open("2.html");
+                        }
+                        else if(a=="Sulur"){
+                            open("3.html");
+                        }
+                        else if(a=="Mettupalayam"){
+                            open("4.html");
+                        }
+                        else if(a=="Pollachi"){
+                            open("5.html");
+                        }
+                        else if(a=="Valparai"){
+                            open("6.html");
+                        } else {
+                            document.write("Sorry, Entered area doesn't exist");
+                        }
+
+                    }
+                        </script>
+                  
+                       <button onclick="search()">Click here to search by area</button><br>
+                        <br>
+                <iframe src="cases.html" width="500" height="200" style="border:double black 1px;"></iframe>
             <td><img src="cbepic.png" height="300" width="250" align="left"></td>
-        </font></p></tr></table>
-       
-        <hr>
-        <marquee behavior="scroll" direction="right"><font face="Times New Roman" color="red" size="5">Get vaccinated !!</font></marquee>
-        <br>
+        </font></p></tr></table></div></div>  
+                <br><br>
+        <div class="rightcolumn">
+            <div class="cardr" style="text-align: center;"><marquee behavior="scroll" direction="up">
+
+                <h2>Announcements</h2>
+                <font size="5" color="yellow"><ul type="disc">
+                    <li>Tamil Nadu govt extends Covid lockdown till July 19</li>
+                    <li>Shops allowed to open till 9 pm</li>
+                    <li>Colleges, schools, zoos will continue to remain shut</li>
+                </ul></font>
+                <br><br><br><br><br>
+            </marquee>
+            </div>
+        </div>
+        <div class="leftcolumn"> 
+            <marquee behavior="scroll" direction="right"><font face="Times New Roman" color="red" size="6">Get vaccinated !!</font></marquee>  
+        <div class="cardl">
         <table>
             <tr> 
                 <td>
@@ -81,16 +182,69 @@
                     <ol type="1"><font size="6">
                         <li><a href="covaxin.html">For Covaxin</a></li>
                         <li><a href="covishield.html">For Covishield</a></li>
-                    </font></ol>  
-                    
+                    </font></ol>
                 </td>
             </tr>
-        </table>
+        </table> </div></div>
+        <div class="rightcolumn">
+            <div class="cardr">
+                <p style="text-align:center ;"><img src="vac.gif" width="300" height="300"></p>
+            </div>
+        </div>
+        <br><br>
         <hr>
-        <br>
-        <p style="text-align: center;" id="gallery"><font size="8" face="Times New Roman" color="red">!------Gallery------!</font></p>
+        <h2 style="text-align: center;" id="gallery"><font size="8" face="Times New Roman" color="red">!------Gallery------!</font></h2>
+        
         <table  align="center">
-            <tr>
+            <div class="slideshow-container">
+
+                <div class="mySlides">
+                  <div class="numbertext">1 / 4</div>
+                  <img src="san.jpg" style="width:100%" usemap="#san" class="map1"> 
+                  <map name="san">
+                    <area shape="rect" title="NEWS -1" coords="0,0,400,300" target="blank" href="san.html">
+                </map>
+                </div>
+                <div class="mySlides">
+                  <div class="numbertext">2 / 4</div>
+                  <img src="yoga.jpg" style="width:100%" usemap="#yoga" class="map1">  
+                  <map name="yoga">
+                    <area shape="rect" title="NEWS -2" coords="0,0,400,300" target="blank" href="yoga.html">
+                </map>
+                </div>   
+                <div class="mySlides">
+                  <div class="numbertext">3 / 4</div>
+                  <img src="covi.png" style="width:100%" usemap="#covi" class="map1">
+                  <map name="covi">
+                    <area shape="rect" title="NEWS -3" coords="0,0,400,300" target="blank" href="covi.html">
+                </map>
+                </div>
+                <div class="mySlides">
+                <div class="numbertext">4 / 4</div>
+                <img src="pica.png" style="width:100%" usemap="#pica" class="map1">
+                <map name="pica" class="map1">
+                    <area shape="rect" title="NEWS -4" coords="0,0,400,300" target="blank" href="pica.html">
+                </map>
+              </div></div>
+                <br>
+                <script type="text/javascript">
+                    var slideIndex = 0;
+                    showSlides();
+                    
+                    function showSlides() {
+                      var i;
+                      var slides = document.getElementsByClassName("mySlides");
+                      for (i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none";  
+                      }
+                      slideIndex++;
+                      if (slideIndex > slides.length) {slideIndex = 1}    
+                      slides[slideIndex-1].style.display = "block";  
+                      setTimeout(showSlides,5000); // Change image every 5 seconds
+                    }
+                    </script>
+                
+         <!--<tr>
                 <td>
                     <img src="san.jpg" width="400" height="300" usemap="#san">
                 </td>
@@ -117,14 +271,14 @@
                 </td>
                 <map name="pica">
                     <area shape="rect" title="NEWS -4" coords="0,0,400,300" target="blank" href="pica.html">
-                </map></tr>
+                </map></tr>--->
                <tr>
                     <td colspan="2">
                         <table border="2" align="center">
                             <tr><td>
                               <p style="text-align: center;color: red;"><font size="6">Want to know more about covid? Watch the video given below......</font></p>
                            <center>
-                                <video id="vid" class="center" width="700" height="600" controls source src="corona.mp4" type="video/mp4"></video>
+                                <video id="vid" class="center" width="700" height="600" controls source src="corona.mp4" type="video/mp4" onplay="vid()" onended="end()"></video>
                             </center></td></tr>
                         </table>
                     </td>
@@ -137,67 +291,87 @@
         <br>
        <p style="text-align: center;"><img src="end.png"  width="300" height="200" usemap="#mask" ></p>
        <hr>
-       <map name="mask">
-           <area shape="rect" title="MASK" coords="70,45,140,90" target="blank" href="mask.html">
+       <map name="mask" class="map1">
+           <area shape="rect" title="MASK" coords="70,45,140,90" target="blank" href="mask.html" class="map">
        </map>
-       <form style="text-align:center;background-color:black;" method="POST">
+       <form style="text-align:center;background-color:black;" method="POST" action="submit.html"> 
         <fieldset>
             <legend>
                <font color="white" size="4">Want to recieve updates  ??</font> 
             </legend>
             <br>
-            <p><font size="6" color="white"><a href="reg.html">Register</a> here to get Continuous updates!! </font></p>
+            <p><font size="6" color="white"><button onclick="openForm()" class="obutton">Register</button> here to get Continuous updates!! </font></p>
+            <div class="form-popup" id="myForm">
+                  <h1 style="text-align: center;">Register</h1>
+                  <label for="name1"><b>First Name :</b></label>
+                  <input type="text" name="name1" id="fname" required size="30" onfocusin="myfocus(this)" onblur="myblur(this)"><br><br>
+                  <label for="name2"><b>Last Name :</b></label>
+                  <input type="text" name="name2" id="lname" required size="30" onfocusin="myfocus(this)" onblur="myblur(this)"><br><br>
+                  <label for="email"><b>Email :</b></label>
+                  <input type="email" placeholder="Enter Email" name="email" required size="30" onfocusin="myfocus(this)"><br><br>
+                  <label for="mobile"><b>Mobile number :</b></label>  
+                  <input type="tel" name="mobile" pattern="[0-9]{10}" required size="30" onfocusin="myfocus(this)"><br><br><br>
+                  <button type="submit" class="btn" >Register</button>&emsp;
+                  <button type="button" class="btn" onclick="closeForm()">Close</button>
+                </form>
+              </div>
+              
+              <script>
+              function openForm() {
+                document.getElementById("myForm").style.display = "block";
+              }
+              
+              function closeForm() {
+                document.getElementById("myForm").style.display = "none";
+              }
+              function myblur(a) {
+          a.value=a.value.toUpperCase();
+}         
+              function myfocus(b)
+              {
+                 b.style.background="pink";
+                 b.style.border=" solid 2px red";
+              }     
+              </script>
+              
             <br>
             </fieldset>
    </form>
-       <form style="background-color: brown;" style="height: 100px;">
-           <fieldset >
-               <table align="center">
-                   <tr>
-                       <td style="text-align: left;">
-                        <nav>
-                            <img src="f.png"  height="50" width="50" usemap="#f">&emsp; 
-                            <img src="i.png"  height="50" width="50" usemap="#i">&emsp;  
-                            <img src="t.png" height="50" width="50" usemap="#t">&emsp;&emsp;&emsp;&emsp; &emsp;&emsp; 
-                            <map name="f">
-                                <area shape="rect" coords="0,0,50,50" target="blank" href="https://www.facebook.com/">
-                            </map>
-                            <map name="i">
-                                <area shape="rect" coords="0,0,50,50" target="blank" href="https://www.instagram.com/">
-                            </map>
-                            <map name="t">
-                                <area shape="rect" coords="0,0,50,50" target="blank" href="https://www.twitter.com/">
-                            </map>
-                          </nav></td>
-                          <td style="text-align: right;">
-                            <table align="right">
-                                <tr>
-                                    <td>
-                                     <p id="contact"><font face="Times New Roman" size="4" color="white"><u>CONTACT US</u></font></p>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <ul type="disc">
-                                            <li>Harish-xxxxxxxxxx</li>
-                                            <li>Sharon-xxxxxxxxxx</li>
-                                            <li>Dheepthi-xxxxxxxxxx</li>
-                                            <li>Utkarsh-xxxxxxxxxx</li>
-                                            <li>Vinusha-xxxxxxxxxx</li>
-                                        </ul>
-                                       
-                                    </td>
-                                </tr>
-                            </table>
-                          </td>
-                   </tr>
-
-               </table>
-               
-               
-           </fieldset>
-       </form>
-      
+       <footer class="footer1">
+           <p>
+        <div class="footerl">
+ 
+            <h3 style="font-family:cursive;margin-top:99px;">Covid<span style="color: red;">Coimbatore</span></h3>
+            
+            <p class="footer-links">
+            <a href="index.html">Home</a>
+            +
+            <a href="about us new.html">About us</a>
+            +
+            <a href="index.html#gallery">Gallery</a>
+            +
+            <a href="#contact">Contact</a>
+            </p>
+            <p style=" color:  #8f9296;
+ font-size: 14px;
+ font-weight: normal;">Covid Coimbatore &copy; 2021</p>
+            </div>
+                                <div class="footerc" style="height: 263px;">
+                                     <p id="contact" style="text-align: center;font-family:cursive;color: red;"><u>CONTACT US</u></p><br>
+                                        <p style="text-align: center;font-size: 15px;"><i class="fa fa-address-book-o" style="font-size:20px;margin-top: -100px"></i>Harish-xxxxxxxxxx</p>                                 
+                                        <p style="text-align: center;font-size: 15px;"><i class="fa fa-address-book-o" style="font-size:20px;margin-top: -100px"></i>Sharon-xxxxxxxxxx</p>
+                                            
+                                            <p style="text-align: center;font-size: 15px;"><i class="fa fa-address-book-o" style="font-size:20px;margin-top: -100px"></i>Dheepthi-xxxxxxxxx</p>
+                                            
+                                                <p style="text-align: center;font-size: 15px;"><i class="fa fa-address-book-o" style="font-size:20px;margin-top: -100px"></i>Utkarsh-xxxxxxxxxx</p>
+                                            
+                                                    <p style="text-align: center;font-size: 15px;"><i class="fa fa-address-book-o" style="font-size:20px;margin-top: -100px"></i> Vinusha-xxxxxxxxx</p>
+                                </p></div>
+                                        <div class="footerr" style="vertical-align: middle;margin-top:60px;">
+                                            <h3 style="font-family:cursive;">Follow us on:</h3>
+                                            <p style="text-align: center;vertical-align: middle;"><a href="https://www.facebook.com/" class="fa fa-facebook" style="vertical-align: middle;"></a>
+                                            <a href="https://www.instagram.com/" class="fa fa-instagram" style="vertical-align:middle ;"></a>
+                                            <a href="https://www.twitter.com/" class="fa fa-twitter" style="vertical-align: middle;"></a></p>
+                                       </div>                       
+                                        </p></footer>
        </body>
-       
-</html>

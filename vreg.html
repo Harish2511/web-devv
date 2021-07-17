@@ -2,25 +2,19 @@
     <head>
         <meta charset="UTF-8">
         <title colour="red">VACCINATION REGISTRATION</title>
+        <link rel="stylesheet" href="style.css">
     </head>
     <body background="bg3.jpg" style="font-family: 'Times New Roman', Times, serif;">
-        <form style="background-color: brown;">
-        <fieldset>
-                <h1 style="text-align: center;"><a href="covid.html"><font color="white">COVID19 </font></a>
-                <a href="https://en.wikipedia.org/wiki/Coimbatore"><font color="black">COIMBATORE</font> </a></h1>
-        </fieldset>
-        </form>
-        <form style="background-color: black;">
-        <fieldset>
-            <font face="Times New Roman" size="4">
-                <p style="text-align:right;"><a href="index.html"><font color="white">  HOME  </font></a>
-                <font color="red">  +  </font> 
-                <a href="about us new.html"><font color="white">  ABOUT US  </font></a>
-                <font color="red">  +  </font><a href="index.html#gallery"><font color="white">  Gallery  </font></a>
-                <font color="red">  +  </font><a href="#contact"><font color="white">CONTACT US</font></a></p>
-            </font>
-        </fieldset>
-        </form><br><hr>
+        <div class="title">
+            <h1 style="text-align: center;"><a href="covid.html"><font color="white">COVID19 </font></a><a href="https://en.wikipedia.org/wiki/Coimbatore">
+                <font color="black">COIMBATORE</font> </a></h1></div>
+                <div class="tit">
+                    <ul><font size="4">
+                        <li><a href="#">Home</a></li><p style="color: red;">&emsp; + &emsp;</p>
+                        <li><a href="about us new.html">About us</a></li><p style="color: red;">&emsp; + &emsp;</p>
+                        <li><a href="index.html#gallery">Gallery</a></li><p style="color: red;">&emsp; + &emsp;</p>
+                        <li><a href="#contact">Contact us</a></li>
+                    </font></ul></div> <br><hr>
         <center><form action="submitreg.html" method="get" style="background-color: black;width: 800px;color: wheat;" ><table align="center" height="400" width="400" style="color: wheat;">
        <center> <h1>REGISTRATION FORM</h1></center>
         <tr>
@@ -71,8 +65,19 @@
         <center>
         <h5><input type="checkbox" name="check" id="check" required > I have read and provide consent for my data to be processed for purposes mentioned in the Privacy policy
         and Terms and Conditions,<br> and agree to be contacted for promotion via whatsapp,sms,email etc.</h5>
-        <p><input type="submit" name="submit" id="submit">
-        <input type="reset" name="reset" id="reset"></p>
+        <p><button type="submit" onclick="return confirmsub()">Submit</button>&emsp;
+        <button type="reset">Reset</button></p>
+        <script type="text/javascript">
+        function confirmsub()
+        {
+          var con=confirm("Do you want to submit?");
+          if(con)
+          {
+              return true;
+          } 
+          else{ return false;} 
+        }
+    </script>
         </center></form>
     </center>
     <form style="background-color: brown;">

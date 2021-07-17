@@ -1,7 +1,55 @@
 <html>
     <head>
         <title>COVID 19</title>
+        <style>
+           /* td:hover{
+                color: slateblue;
+            }*/
+            td:hover{
+                color: orange;
+            }
+            .header{
+              font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+              font-size: 50px;
+              border: 3px solid black;
+              max-width: fit-content;
+              padding: 10px;
+              color: chocolate;
+              text-shadow: 3px 5px white;
+              text-align: center;
+              border: 2px outset white;
+}
+          .mi{
+              font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+              font-size: 20px;
+              text-decoration: lightcoral;
+              color: lightcoral;
+              float: left;
+              top: 1px;
+              border: 2px dashed white;
+          }
+          .button {
+            background-color: black;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+           text-align: center;
+           text-decoration: none;
+           display: inline-block;
+           font-size: 16px;
+           margin: 4px 2px;
+           cursor: pointer;
+}
+
+        </style>
+        <script type="text/javascript">
+            function click() {
+             window.confirm("Are you sure want to leave this page?");
+            
+            }
+        </script>
     </head>
+    
     <body background="bg3.jpg" style="font-family: 'Times New Roman', Times, serif;">
         <form style="background-color: brown;">
         <fieldset>
@@ -11,27 +59,35 @@
         <form style="background-color: black;">
         <fieldset>
             <font face="Times New Roman" size="4">
-                <p style="text-align:right;"><a href="index.html"><font color="white">  HOME  </font></a>
+                <p style="text-align:right;"><a href="case study1.html"><font color="white">  HOME  </font></a>
                 <font color="red">  +  </font> 
                 <a href="about us new.html"><font color="white">  ABOUT US  </font></a>
-                <font color="red">  +  </font><a href="index.html#gallery"><font color="white">  Gallery  </font></a>
-                <font color="red">  +  </font><a href="#contact"><font color="white">CONTACT US</font></a></p>
+                <font color="red">  +  </font><a href="case study1.html#gallery"><font color="white">  Gallery  </font></a>
+                <font color="red">  +  </font><a href="case study1.html#contact"><font color="white">CONTACT US</font></a></p>
             </font>
         </fieldset>
         </form><br>
+        <form action="" style="background-color: black;margin: 30px;">
+            <br><br>
+           <center> <h1 class="header">MYTHS!</h1></center>
+           <marquee behavior="slide" direction="left"><p class="mi">Place the cursor beside every picture to see the information</p></marquee>
+            <br><br><br>
 <table style="font-family: 'Times New Roman', Times, serif;font-size: x-large;">
     <tr>
         <td><img src="https://www.who.int/images/default-source/health-topics/coronavirus/myth-busters/web-mythbusters/eng-mythbusters-covid19-(5)-supplements.tmb-1920v.png?sfvrsn=10c11fe4_1"
             alt="not found" height="400" width="600"><br></td>
         <td><h2>FACT: Vitamin and mineral supplements cannot cure COVID-19</h2>
-            <p>Micronutrients, such as vitamins D and C and zinc, are critical for a well-functioning immune system and play a vital role 
-               in promoting health and nutritional well-being.  There is currently no guidance on the use of micronutrient supplements as a treatment of COVID-19.
-               WHO is coordinating efforts to develop and evaluate medicines to treat COVID-19</p><br></td>
+            <p id="demo"></p><br></td>
+            <script type="text/javascript">
+                document.getElementById("demo").innerHTML="Micronutrients,  such as vitamins D and C and zinc, are critical for a well-functioning immune system and play a vital role in promoting health and nutritional well-being.  There is currently no guidance on the use of micronutrient supplements as a treatment of COVID-19.WHO is coordinating efforts to develop and evaluate medicines to treat COVID-19.";
+                </script>
     </tr>
     <tr>
        <td><h2>FACT: Clinical trials confirm that hydroxychloroquine does not prevent illness or death from COVID-19.</h2>
-        <p>Hydroxychloroquine or chloroquine, a common treatment for malaria and certain autoimmune diseases, has been studied as a preventative treatment
-           for COVID-19. Evidence from these studies shows that hydroxychloroquine has little to no impact on illness, hospitalization, or death. </p></td> 
+        <p id="demo1"> </p></td> 
+           <script>
+               document.getElementById("demo1").innerHTML="Hydroxychloroquine or chloroquine, a common treatment for malaria and certain autoimmune diseases, has been studied as a preventative treatment for COVID-19. Evidence from these studies shows that hydroxychloroquine has little to no impact on illness, hospitalization, or death."
+           </script>
         <td><img src="https://www.who.int/images/default-source/health-topics/coronavirus/myth-busters/web-mythbusters/who_hydroxychloraquine_hd.tmb-1920v.jpg?sfvrsn=b95d14db_1"
             alt="not found"height="400" width="600"></td>
     </tr>
@@ -56,21 +112,23 @@
         <td><img src="https://www.who.int/images/default-source/health-topics/coronavirus/eng-mythbusting-ncov-(75).tmb-1920v.png?sfvrsn=a1aa01b1_1" 
             alt="not found"height="400" width="600" ></td>
             <td><h2>FACT: Thermal scanners CANNOT detect COVID-19</h2>
-                Thermal scanners are effective in detecting people who have a fever (i.e. have a higher than normal body temperature). They cannot detect people
+               <p> Thermal scanners are effective in detecting people who have a fever (i.e. have a higher than normal body temperature). They cannot detect people
                 who are infected with COVID-19. There are many causes of fever. Call your healthcare provider if you need assistance or seek immediate medical
-                care if you have fever and live in an area with malaria or dengue.</td>
+                care if you have fever and live in an area with malaria or dengue.</p></td>
     </tr>
     <tr>
         <td><h2>FACT: People of all ages can be infected by the COVID-19 virus</h2>
-            Older people and younger people can be infected by the COVID-19 virus. Older people, and people with pre-existing medical conditions such as asthma,
+           <p> Older people and younger people can be infected by the COVID-19 virus. Older people, and people with pre-existing medical conditions such as asthma,
             diabetes, and heart disease appear to be more vulnerable to becoming severely ill with the virus. WHO advises people of all ages to take steps
-            to protect themselves from the virus, for example by following good hand hygiene and good respiratory hygiene.</td>
+            to protect themselves from the virus, for example by following good hand hygiene and good respiratory hygiene.</p></td>
         <td><img src="https://www.who.int/images/default-source/health-topics/coronavirus/myth-busters/mythbuster-2.tmb-1024v.png?sfvrsn=635d24e5_15" 
             alt="not found" height="400" width="600"></td>
     </tr>
 </table>
+</form>
 <br><br>
-    <center><a href="covid.html" style="font-size: x-large;">Click here to go back</a></center>
+<center><input type="button" name="Back" class="button" value="BACK"></center>
+
     <form style="background-color: brown;">
         <fieldset>
         <p id="contact"> <table align="center">

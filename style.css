@@ -1,0 +1,196 @@
+
+.title{
+  border: black  double;
+  background-image: url("tbg.gif");
+  box-shadow: 5px 10px 5px black;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  padding: 20px;
+}
+.tit ul{
+    background: black;
+    overflow: hidden;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.tit li{float: left;}
+.tit p{float: left;}
+.tit li a{
+    padding: 20px;
+    color:white;
+    display:block;
+    text-decoration: none;
+    text-align: center;
+}
+.tit li a:hover{
+    color: black;
+    background-color: red;
+}
+button{
+    background: none;
+    color:crimson;
+    border:2px solid;
+    transition: 0.2s;
+    font-size: 20px;
+}
+button:hover{
+    background: none;
+    color: black;
+    box-shadow: 0px 5px 5px yellow;
+    transform: translateY(-0.25px);
+}
+.headcov{
+    color:white;
+    font-size: 50px;
+    text-decoration: none;
+    transition:0.5s;
+}
+.headcov:hover{
+    color:black;
+    text-shadow: 0px 0px 10px black;
+    transform: all;
+}
+.headcoi{
+    color:black;
+    font-size: 50px;
+    text-decoration: none;
+    transition:0.5s;
+}
+.headcoi:hover{
+    color:white;
+    text-shadow: 0px 0px 10px white;
+    transform: all;
+}
+*{box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 700px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 22px;
+    background: black;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  img {vertical-align: middle;}
+  .sidepanel  {
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    height: 250px;
+    top: 0;
+    left: 0;
+    background: black;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  .sidepanel a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: wheat;
+    display: block;
+    transition: 0.3s;
+  }
+  .sidepanel a:hover {
+    color: red;
+  }
+  .sidepanel .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+  }
+  
+  .openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    padding: 10px 15px;
+    border: none;
+  }
+  
+  .openbtn:hover {
+    background-color:red;
+  }
+  footer{
+   position:absolute;
+   }
+  .footer1 {
+    padding: 20px;
+    text-align: center;
+    background: #dddddd;
+    width: 100%;
+    margin-top: 20px;
+    box-sizing: border-box;
+  }
+  .footer1 .footerl,
+.footer1 .footerc,
+.footer1 .footerr{
+  display: inline-block;
+  vertical-align: top;
+}
+  .footer1 .footerr{
+    float: left;
+    width: 30%;
+  }
+  .footer1 .footerc{
+    float:left;
+    width:40%;
+    line-height: 0;
+  }
+  .footer1 .footerl{
+    float: left;
+    width: 30%;
+  }
+  body{
+    background-image: url("bg3.jpg");
+    background-attachment: fixed;
+    font-family: 'Times New Roman', Times, serif;
+}
+.header{
+  position: fixed;
+  text-align: center;
+  width: 100%;
+}
+a{
+  text-decoration: none;
+  color:royalblue;
+}
+a:hover{
+  color:red;
+  text-shadow: 0px 0px 5px yellow;
+}
+.map1:hover{
+  opacity: 0.5;
+}
+#myBtn {
+  display: none; 
+  position: fixed; 
+  bottom: 20px; 
+  right: 30px; 
+  z-index: 99; 
+  border: none; 
+  outline: none; 
+  background-color: red; 
+  color: white; 
+  cursor: pointer; 
+  padding: 15px; 
+  border-radius: 10px;
+  font-size: 18px; 
+}
+
+#myBtn:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
+}
