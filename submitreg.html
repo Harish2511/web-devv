@@ -2,25 +2,36 @@
     <head>
         <meta charset="utf-8">
         <title>Thank You</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="social.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
-    <body background="bg3.jpg" style="font-family: 'Times New Roman', Times, serif;">
-        <form style="background-color: brown;">
-        <fieldset>
-                <h1 style="text-align: center;"><a href="covid.html"><font color="white">COVID19 </font></a>
-                <a href="https://en.wikipedia.org/wiki/Coimbatore"><font color="black">COIMBATORE</font> </a></h1>
-        </fieldset>
-        </form>
-        <form style="background-color: black;">
-        <fieldset>
-            <font face="Times New Roman" size="4">
-                <p style="text-align:right;"><a href="index.html"><font color="white">  HOME  </font></a>
-                <font color="red">  +  </font> 
-                <a href="about us new.html"><font color="white">  ABOUT US  </font></a>
-                <font color="red">  +  </font><a href="index.html#gallery"><font color="white">  Gallery  </font></a>
-                <font color="red">  +  </font><a href="#contact"><font color="white">CONTACT US</font></a></p>
-            </font>
-        </fieldset>
-        </form><br><hr>
+    <body>
+        <button onclick="topFunction()" id="myBtn" title="Go to top">▲</button>
+        <script type="text/javascript" src="scroll.js">
+        </script>    
+               <div class="title">
+                <h1 style="text-align: center;"><a href="covid.html"><span class="headcov">COVID19 </span></a><a href="https://en.wikipedia.org/wiki/Coimbatore">
+                    <span class="headcoi">COIMBATORE</span></font> </a></h1></div>
+                    <div class="header"><div id="mySidepanel" class="sidepanel">
+                            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+                            <a href="index.html">Home</a>
+                            <a href="about us new.html">About us</a>
+                            <a href="index.html#gallery">Gallery</a>
+                            <a href="#contact">Contact</a>
+                          </div>
+                        <p style="float: left;background-color: black;"><button class="openbtn" onclick="openNav()" >☰ Menu</button></p></div>
+                        <script>
+                            function openNav() {
+                              document.getElementById("mySidepanel").style.width = "250px";
+                            }
+                            
+                            function closeNav() {
+                              document.getElementById("mySidepanel").style.width = "0";
+                            }
+                        
+                            </script>
+    <br><hr>
         <center><table border="1" height="500" width="1000">
             <tr><th bgcolor="black">
             <p><h1 style="color: wheat; font-family: 'Times New Roman', Times, serif ; font: size 100px;;">THANK YOU FOR YOUR SUBMISSION!</h1></p>
@@ -29,41 +40,43 @@
             </th></tr>
         </table></center>
         <hr>
-        <form style="background-color: brown;">
-            <fieldset>
-            <p id="contact"> <table align="center">
-                <tr>
-                    <td style="text-align: left;">
-                     <nav>
-                         <img src="f.png"  height="50" width="50" usemap="#f">&emsp; 
-                         <img src="i.png"  height="50" width="50" usemap="#i">&emsp;  
-                         <img src="t.png" height="50" width="50" usemap="#t">&emsp;&emsp;&emsp;&emsp; &emsp;&emsp; 
-                         <map name="f">
-                             <area shape="rect" coords="0,0,50,50" target="blank" href="https://www.facebook.com/">
-                         </map>
-                         <map name="i">
-                             <area shape="rect" coords="0,0,50,50" target="blank" href="https://www.instagram.com/">
-                         </map>
-                         <map name="t">
-                             <area shape="rect" coords="0,0,50,50" target="blank" href="https://www.twitter.com/">
-                         </map>
-                       </nav></td>
-                       <td style="text-align: right;">
-            <table align="right">
-            <tr>
-                <td><p><font face="Times New Roman" size="4" color="white"><u>CONTACT US</u></font></p></td>
-            </tr>
-            <tr>
-                <td><ul type="disc">
-                    <li>Harish-xxxxxxxxxx</li>
-                    <li>Sharon-xxxxxxxxxx</li>
-                    <li>Dheepthi-xxxxxxxxxx</li>
-                    <li>Utkarsh-xxxxxxxxxx</li>
-                    <li>Vinusha-xxxxxxxxxx</li></ul>
-                </td>
-            </tr>
-            </table></p>
-            </fieldset>
+        <footer class="footer1">
+            <p>
+         <div class="footerl">
+    
+             <h3 style="font-family:cursive;margin-top:99px;">Covid<span style="color: red;">Coimbatore</span></h3>
+             
+             <p class="footer-links">
+             <a href="index.html">Home</a>
+             +
+             <a href="about us new.html">About us</a>
+             +
+             <a href="index.html#gallery">Gallery</a>
+             +
+             <a href="#contact">Contact</a>
+             </p>
+             <p style=" color:  #8f9296;
+    font-size: 14px;
+    font-weight: normal;">Covid Coimbatore &copy; 2021</p>
+             </div>
+                                 <div class="footerc" style="height: 263px;">
+                                      <p id="contact" style="text-align: center;font-family:cursive;color: red;"><u>CONTACT US</u></p><br>
+                                         <p style="text-align: center;font-size: 15px;"><i class="fa fa-address-book-o" style="font-size:20px;margin-top: -100px"></i>Harish-xxxxxxxxxx</p>                                 
+                                         <p style="text-align: center;font-size: 15px;"><i class="fa fa-address-book-o" style="font-size:20px;margin-top: -100px"></i>Sharon-xxxxxxxxxx</p>
+                                             
+                                             <p style="text-align: center;font-size: 15px;"><i class="fa fa-address-book-o" style="font-size:20px;margin-top: -100px"></i>Dheepthi-xxxxxxxxx</p>
+                                             
+                                                 <p style="text-align: center;font-size: 15px;"><i class="fa fa-address-book-o" style="font-size:20px;margin-top: -100px"></i>Utkarsh-xxxxxxxxxx</p>
+                                             
+                                                     <p style="text-align: center;font-size: 15px;"><i class="fa fa-address-book-o" style="font-size:20px;margin-top: -100px"></i> Vinusha-xxxxxxxxx</p>
+                                 </p></div>
+                                         <div class="footerr" style="vertical-align: middle;margin-top:60px;">
+                                             <h3 style="font-family:cursive;">Follow us on:</h3>
+                                             <p style="text-align: center;vertical-align: middle;"><a href="https://www.facebook.com/" class="fa fa-facebook" style="vertical-align: middle;"></a>
+                                             <a href="https://www.instagram.com/" class="fa fa-instagram" style="vertical-align:middle ;"></a>
+                                             <a href="https://www.twitter.com/" class="fa fa-twitter" style="vertical-align: middle;"></a></p>
+                                        </div>                       
+                                         </p></footer>
        
     </body>
     </html>

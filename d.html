@@ -2,29 +2,126 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>COVAXIN</title>
-
+        <title>PRECAUTIONS</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="social.css">
+        <link rel="stylesheet" href="popup.css">
+        <style>
+             .slider {
+        width: 500px;
+        height: 400px;
+        background-color: yellow;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 0px;
+        text-align: center;
+        overflow: hidden;
+      }
+      .image-container {
+        width: 1500px;
+        background-color: pink;
+        height: 300px;
+        clear: both;
+        position: relative;
+        -webkit-transition: left 2s;
+        -moz-transition: left 2s;
+        -o-transition: left 2s;
+        transition: left 2s;
+      }
+      .slide {
+        float: left;
+        margin: 0px;
+        padding: 0px;
+        position: relative;
+      }
+      #slide-1:target ~ .image-container {
+        left: 0px;
+      }
+      #slide-2:target ~ .image-container {
+        left: -500px;
+      }
+      #slide-3:target ~ .image-container {
+        left: -1000px;
+      }
+      .buttons {
+        position: relative;
+        top: -20px;
+      }
+      .buttons a {
+        display: inline-block;
+        height: 15px;
+        width: 15px;
+        border-radius: 50px;
+        background-color: lightgreen;
+      }
+         .tab{
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 30px;
+          }
+          table{
+              border-collapse: collapse;
+          }
+          .column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.tablevid{
+    border: 4px dotted black;
+}
+    
+          </style>
+      <script>
+        function tq(){ 
+                            return "Thanks for visiting our webpage!!";
+                            }  
+      </script>
+      
     </head>
+
    
-    <body background="bg3.jpg" style="font-family: 'Times New Roman', Times, serif;">
-        <form style="background-color: brown;">
-            <fieldset>
-                <h1 style="text-align: center;"><a href="covid.html"><font color="white">COVID19 </font></a><a href="https://en.wikipedia.org/wiki/Coimbatore"><font color="black">COIMBATORE</font> </a></h1>
-             </fieldset>
-        </form>
-       <form style="background-color: black;">
-           <fieldset>
-            <font face="Times New Roman" size="4">
-                <p style="text-align:right;"><a href="index.html"><font color="white">  HOME  </font></a><font color="red">  +  </font> <a href="about us new.html"><font color="white">  ABOUT US  </font>
-                </a>
-                 
-                <font color="red">  +  </font><a href="index.html#gallery"><font color="white">  Gallery  </font></a><font color="red">  +  </font><a href="file:///C:/Users/hp/Documents/uid/home%20(1).html#contact"><font color="white">CONTACT US</font></a></p>
-            </font>
-        </fieldset>
-       </form>
-       <br>
+    <body background="bg3.jpg" style="font-family: 'Times New Roman', Times, serif;" onbeforeunload="return tq()">
+
+         
+        <button onclick="topFunction()" id="myBtn" title="Go to top">▲</button>
+        <script type="text/javascript" src="scroll.js">
+        </script>    
+               <div class="title">
+                <h1 style="text-align: center;"><a href="covid.html"><span class="headcov">COVID19 </span></a><a href="https://en.wikipedia.org/wiki/Coimbatore">
+                    <span class="headcoi">COIMBATORE</span></font> </a></h1></div>
+                    <div class="header"><div id="mySidepanel" class="sidepanel">
+                      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+                      <a href="index.html">Home</a>
+                      <a href="about us new.html">About us</a>
+                      <a href="index.html#gallery">Gallery</a>
+                      <a href="index.html#contact">Contact</a>
+                          </div>
+                        <p style="float: left;background-color: black;"><button class="openbtn" onclick="openNav()" >☰ Menu</button></p></div>
+       <br><br><br>
+       <script>
+        function openNav() {
+          document.getElementById("mySidepanel").style.width = "250px";
+        }
+        
+        function closeNav() {
+          document.getElementById("mySidepanel").style.width = "0";
+        }
+        function vid(){
+            alert("Video started playing....");
+        }
+        function end(){
+            alert("Video has ended");
+        }
+        </script>
 <h2>PRECAUTIONS BEFORE GETTING VACCINATED :</h2>
-<table border="2"><tr><td><img src="pre.jpeg" height="300" width="300"></td>
+<table border="2" style="background-color:rgb(192, 110, 78);"><tr><td><img src="pre.jpeg" height="300" width="300"></td>
     <td>
 <ul TYPE="square"><font size="5">
     <li> In case a person has allergies to medication, or drugs, it is important to get an all-clear from a medical practitioner. A complete blood count (CBC),
@@ -37,59 +134,130 @@
                   in the last one and a half months are advised to not take the vaccine right now.</li>   </font>
 </ul></td></tr></table>
 <br/>
+<table>
+  <tr><td>
+<hr><center>
+    <div class="slider">
+        <span id="slide-1"></span>
+        <span id="slide-2"></span>
+       
+        <div class="image-container">
+          <img src="dos and donts.png" class="slide" width="500" height="400" />
+          <img src="aftervaccpic.jpg" class="slide" width="500" height="400" />
+         
+        </div>
+        <div class="buttons">
+          <a href="#slide-1"></a>
+          <a href="#slide-2"></a>
+         
+        </div>
+      </div></center></td>
+<td>
+  <ul type="square">
+   <h3> <center>FACTS ABOUT COVID VACCINES</center></h3><font size="5" color="red">
+   
+    <li>COVID-19 vaccines don’t give you COVID-19.</li>
+    <li>Although they were developed quickly,
+      the COVID-19 vaccines are safe.</li>
+      <li>The COVID-19 vaccines may protect you against more than one strain of the virus.</li>
+      <li>COVID-19 vaccines don’t change your DNA.</li>
+      <li>COVID-19 vaccines have not been linked to infertility or miscarriage.</li>
+      <li>COVID-19 vaccines don’t contain 
+        microchips or tracking devices.</li>
+        <li>People with chronic diseases 
+          or conditions should get 
+          vaccinated.</li>
+     </font></ul>
+
+
+</td>
+      </tr></table>
 <hr>
-<center><img src="dos and donts.png" height="500" width="500"/></center>
-<hr>
+<br>
+<font size="5">
+
 <h2>ELIGIBILTIY FOR VACCINATION :</h2>
-<ul><font size="5">
-    <li>
-        Pregnant and lactating mothers are advised to not take the COVID-19 vaccine as they have not been part of any clinical trial.
-</li>
-<li>People with allergic reactions to vaccines, pharmaceutical products, and notable food allergies are also not allowed to take the jab.</li>
-<li>Anyone who has had an adverse reaction to a COVID-19 vaccine earlier should refrain from taking the vaccine.</li>
-<li>Persons showing active symptoms of SARS-CoV-2 infection or who have had COVID-19 in the last 4-8 weeks should also avoid getting vaccinated.</li>
-<li>People who are acutely unwell and hospitalised patients (with or without intensive care) due to any illness are also not included.</li></font>
-</ul>
+
+<center>
+    <marquee behavior=alternate width="202" scrollamount="8" scrolldelay="95" height="37" bgcolor="#FF8C00">IMPORTANT!!</marquee>
+<table border="2" class="tab" style="background-color:rgb(192, 110, 78);">
+<tr> <td>
+       1.Pregnant and lactating mothers are advised to not take the COVID-19<br> vaccine as they have not been part of any clinical trial.<td>
+</tr>
+<tr><td>2.People with allergic reactions to vaccines, pharmaceutical products, <br>and notable food allergies are also not allowed to take the jab.</td></tr><br>
+<tr><td>3.Anyone who has had an adverse reaction to a COVID-19 vaccine earlier<br> should refrain from taking the vaccine.</td></tr><br>
+<tr><td>4.Persons showing active symptoms of SARS-CoV-2 infection or who have<br> had COVID-19 in the last 4-8 weeks should also avoid getting vaccinated.</td></tr><br>
+<tr><td>5.People who are acutely unwell and hospitalised patients (with or<br> without intensive care) due to any illness are also not included.</td></tr><br>
+</tr>
+</table>
+</center></font>
+<br>
+<br>
+<hr><center>
 
 
+<marquee alternate width="309" scrollamount="5" scrolldelay="86" height="30">
+
+<font size="5" color="blue">VACCINES SAVE LIVES! </font></marquee>
+<br>
+<br>
+<table border="2" align="center" class="tablevid">
+    <tr><td>
+      <p style="text-align: center;color: red;"><font size="6">Do watch the video below for more information about vaccination.....</font></p><br>
+    
+   <center>
+        <video id="vid" class="center" width="700" height="600" controls source src="Vaccine video for cse103 project.mp4"  type="video/mp4" onplay="vid()" onended="end()"></video>
+    </center></td></tr>
+</table>
+
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
 <form style="text-align:center;background-color:black; height: 75px;;" method="POST">
-    <a href="index.html" style="font-size: x-large;">Click here to go back</a>
+    <a href="index.html" style="font-size: x-large;" onclick="return confirm('Are you sure you want to go back?')">Click here to go back</a>
+    
 </form>
-<form style="background-color: brown;">
-    <fieldset>
-    <p id="contact"> <table align="center">
-        <tr>
-            <td style="text-align: left;">
-             <nav>
-                 <img src="f.png"  height="50" width="50" usemap="#f">&emsp; 
-                 <img src="i.png"  height="50" width="50" usemap="#i">&emsp;  
-                 <img src="t.png" height="50" width="50" usemap="#t">&emsp;&emsp;&emsp;&emsp; &emsp;&emsp; 
-                 <map name="f">
-                     <area shape="rect" coords="0,0,50,50" target="blank" href="https://www.facebook.com/">
-                 </map>
-                 <map name="i">
-                     <area shape="rect" coords="0,0,50,50" target="blank" href="https://www.instagram.com/">
-                 </map>
-                 <map name="t">
-                     <area shape="rect" coords="0,0,50,50" target="blank" href="https://www.twitter.com/">
-                 </map>
-               </nav></td>
-               <td style="text-align: right;">
-    <table align="right">
-    <tr>
-        <td><p><font face="Times New Roman" size="4" color="white"><u>CONTACT US</u></font></p></td>
-    </tr>
-    <tr>
-        <td><ul type="disc">
-            <li>Harish-xxxxxxxxxx</li>
-            <li>Sharon-xxxxxxxxxx</li>
-            <li>Dheepthi-xxxxxxxxxx</li>
-            <li>Utkarsh-xxxxxxxxxx</li>
-            <li>Vinusha-xxxxxxxxxx</li></ul>
-        </td>
-    </tr>
-    </table></p>
-    </fieldset>
+<footer class="footer1">
+    <p>
+ <div class="footerl">
+
+     <h3 style="font-family:cursive;margin-top:99px;">Covid<span style="color: red;">Coimbatore</span></h3>
+     
+     <p class="footer-links">
+     <a href="index.html">Home</a>
+     +
+     <a href="about us new.html">About us</a>
+     +
+     <a href="index.html#gallery">Gallery</a>
+     +
+     <a href="#contact">Contact</a>
+     </p>
+     <p style=" color:  #8f9296;
+font-size: 14px;
+font-weight: normal;">Covid Coimbatore &copy; 2021</p>
+     </div>
+                         <div class="footerc" style="height: 263px;">
+                              <p id="contact" style="text-align: center;font-family:cursive;color: red;"><u>CONTACT US</u></p><br>
+                                 <p style="text-align: center;font-size: 15px;"><i class="fa fa-address-book-o" style="font-size:20px;margin-top: -100px"></i>Harish-xxxxxxxxxx</p>                                 
+                                 <p style="text-align: center;font-size: 15px;"><i class="fa fa-address-book-o" style="font-size:20px;margin-top: -100px"></i>Sharon-xxxxxxxxxx</p>
+                                     
+                                     <p style="text-align: center;font-size: 15px;"><i class="fa fa-address-book-o" style="font-size:20px;margin-top: -100px"></i>Dheepthi-xxxxxxxxx</p>
+                                     
+                                         <p style="text-align: center;font-size: 15px;"><i class="fa fa-address-book-o" style="font-size:20px;margin-top: -100px"></i>Utkarsh-xxxxxxxxxx</p>
+                                     
+                                             <p style="text-align: center;font-size: 15px;"><i class="fa fa-address-book-o" style="font-size:20px;margin-top: -100px"></i> Vinusha-xxxxxxxxx</p>
+                         </p></div>
+                                 <div class="footerr" style="vertical-align: middle;margin-top:60px;">
+                                     <h3 style="font-family:cursive;">Follow us on:</h3>
+                                     <p style="text-align: center;vertical-align: middle;"><a href="https://www.facebook.com/" class="fa fa-facebook" style="vertical-align: middle;"></a>
+                                     <a href="https://www.instagram.com/" class="fa fa-instagram" style="vertical-align:middle ;"></a>
+                                     <a href="https://www.twitter.com/" class="fa fa-twitter" style="vertical-align: middle;"></a></p>
+                                </div>                       
+                                 </p></footer>
 
 </body>
 </html>

@@ -1,7 +1,7 @@
 
 .title{
   border: black  double;
-  background-image: url("tbg.gif");
+  background-image: url("bgdiv.jpg");
   box-shadow: 5px 10px 5px black;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -41,26 +41,48 @@ button:hover{
     transform: translateY(-0.25px);
 }
 .headcov{
-    color:white;
+    color:black;
+    font-family: cursive;
     font-size: 50px;
     text-decoration: none;
     transition:0.5s;
+    background: none;
+    display: inline-block;
+    transition: transform 0.5s ;
 }
 .headcov:hover{
-    color:black;
-    text-shadow: 0px 0px 10px black;
+    color:#0d1137;
+    text-shadow: 0px 0px 10px #0d1137;
     transform: all;
+    background: #F49F1C;
+    display: inline-block;
+    -ms-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+        transform: scale(1.2);
+   
+        
 }
 .headcoi{
-    color:black;
+    color:red;
     font-size: 50px;
+    font-family: cursive;
     text-decoration: none;
     transition:0.5s;
+    background: none;
+    transition: transform 0.5s ease-in-out;
+    display: inline-block;
 }
 .headcoi:hover{
-    color:white;
-    text-shadow: 0px 0px 10px white;
+    color:#0d1137;
+    background: #F49F1C;
+    text-shadow: 0px 0px 10px #0d1137;
     transform: all;
+    display: inline-block;
+  
+   
+    -ms-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+        transform: scale(1.2);
 }
 *{box-sizing:border-box}
 
@@ -135,6 +157,10 @@ button:hover{
     margin-top: 20px;
     box-sizing: border-box;
   }
+  .footer1:hover{
+    background: lightpink;
+    transition: all 0.5s;
+  }
   .footer1 .footerl,
 .footer1 .footerc,
 .footer1 .footerr{
@@ -155,9 +181,12 @@ button:hover{
     width: 30%;
   }
   body{
-    background-image: url("bg3.jpg");
+    background-image: url("bg3.jpg") ;
+    background-color:royalblue;
+    background-blend-mode: lighten;
     background-attachment: fixed;
     font-family: 'Times New Roman', Times, serif;
+    
 }
 .header{
   position: fixed;

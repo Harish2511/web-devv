@@ -1,5 +1,6 @@
 <html>
     <head>
+        <link rel="stylesheet" href="style.css">
       <style>
           h1{
               font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -18,17 +19,64 @@
               font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
               color: plum;
           }
+          img{
+              float: center;
+              top: 1px;
+              padding: 16px;
+          }
+          .clearfix::after{
+              content: "";
+              clear: both;
+              display: table;
+              padding: 50px;
+
+          }
+          p#blink {
+            font-size: 25px;
+            font-weight: bold;
+            color: #2d38be;
+            transition: 0.5s;
+            text-align: center;
+            right: 1px;
+            text-decoration: underline;
+            text-transform: uppercase;
+        }
+
+    
         
       </style>
     </head>
     <body background="bg3.jpg">
         <center><h1>TYPE OF MASK</h1></center>
-        <br><br>
+        <marquee behavior="scroll" direction="left" class="mask"><a href="mask.mp4" target="name">....Click Here...</a>MAKE YOUR OWN MASK!
+            <a href="mask.mp4" target="name">...Click Here...</a></marquee>
+            <br>
+
         <p  style="font-family: 'Times New Roman', Times, serif; font-size: x-large;">Masks should be used as part of a comprehensive strategy of measures to 
             suppress transmission and save lives; the use of a mask alone is not sufficient to provide an adequate level of protection against COVID-19.
         <br></p>
-        <br><br>
-        <marquee behavior="scroll" direction="left" class="mask"><a href="mask.mp4" target="name">....Click Here...</a>MAKE YOUR OWN MASK!
-             <a href="mask.mp4" target="name">...Click Here...</a></marquee>
+        <br>
+        <p id="blink">Click Below....Grap the best mask with offers!</p>
+        <script type="text/javascript">
+            var blink = document.getElementById('blink');
+            setInterval(function() {
+                blink.style.opacity = (blink.style.opacity == 0 ? 1 : 0);
+            },1500);
+        </script>
+       <center>
+           <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBTmtg0ffooV-GOx1Tm2ND9nHo8aMAKEZ46g&usqp=CAU" alt="none" height="100"width="150" usemap="#a" class="clearfix">
+        <map name="a">
+            <area shape="rect" coords="0,0,150,100" href="https://www.amazon.in/Careview-Model-CV1221-Layers-approved/dp/B08CVSK3ZK" alt="none" target="_blank">
+        </map>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRo1x84GaUBhau1oQInjK9lNXNytA0FrHj9Q&usqp=CAU" alt="none" height="100"width="150" usemap="#b" class="clearfix">
+        <map name="b">
+            <area shape="rect" coords="0,0,150,100" href="https://www.flipkart.com/careview-cv-1221-white-n95-ffp2-protective-mask-ear-loops-filters-viruses-bacteria-air-pollution-pack-10-cv1221-reusable/p/itm15dc4dc501a5d" alt="none" target="_blank">
+        </map>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS36Dv4HH2L1CSmdCk_oIJnMcq31_qy3zHmjA&usqp=CAU" alt="none" height="100"width="150" usemap="#c" class="clearfix">
+        <map name="c">
+            <area shape="rect" coords="0,0,150,100" href="https://dir.indiamart.com/impcat/n95-respirator-mask.html?biz=10" alt="none" target="_blank">
+        </map>
+        </center>
+      
     </body>
 </html>

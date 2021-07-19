@@ -4,12 +4,23 @@
         <meta charset="utf-8">
         <style>
             
-            .cardl{ 
+            .cardl1{ 
        background-clip:border-box;
        border: dotted 5px black;
        padding: 20px;
        background: none;
       margin-bottom: 20px;
+      background:#0d1137;
+      color:#F49F1C ;
+       }
+       .cardl{
+        background-clip:border-box;
+       border: dotted 5px black;
+       padding: 20px;
+       background: none;
+      margin-bottom: 20px;
+      background: #F49F1C;
+      color: #0d1137;
        }
        .cardr{
         padding: 20px;
@@ -43,13 +54,13 @@
                             }      
         </script>
     </head>
-    <body style="font-family: 'Times New Roman', Times, serif;overflow-x: hidden;" onbeforeunload="return tq()">  
+    <body style="font-family: 'Times New Roman', Times, serif;overflow-x: hidden;"  onbeforeunload="return tq()" >  
         <button onclick="topFunction()" id="myBtn" title="Go to top">▲</button>
         <script type="text/javascript" src="scroll.js">
         </script>    
                <div class="title">
-                <h1 style="text-align: center;"><a href="covid.html"><span class="headcov">COVID19 </span></a><a href="https://en.wikipedia.org/wiki/Coimbatore">
-                    <span class="headcoi">COIMBATORE</span></font> </a></h1></div>
+                <h1 style="text-align: center;"><a href="covid.html"><span class="headcov" style="font-family:cursive ;">COVID19 </span></a><a href="https://en.wikipedia.org/wiki/Coimbatore">
+                    <span class="headcoi" style="font-family: cursive;">COIMBATORE</span></font> </a></h1></div>
                     <div class="header"><div id="mySidepanel" class="sidepanel">
                             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
                             <a href="#">Home</a>
@@ -90,7 +101,7 @@
                 </td>
                 <td>
                     <marquee behaviour="scroll" direction="up"><ul type="square">
-                    <font size="6" color="red"><li>The daily caseload of COVID-19 breached the<br> 5,000-mark  in Coimbatore</li>
+                    <font size="6" color="#0d1137"><li>The daily caseload of COVID-19 breached the<br> 5,000-mark  in Coimbatore</li>
                         <li>Officially,covid19 toll in peak</li>
             <li>Coimbatore continues to see a surge !!!</li></font></ul></marquee></td>
                     </tr>
@@ -100,7 +111,7 @@
             <p style="text-align: center;"><img src="divright1.gif" width="300" height="250" ></p>
         </div></div>
         <div class="leftcolumn">
-            <div class="cardl">
+            <div class="cardl1">
         <map name="co-info" class="map1">
             <area shape="rect" title="covidimage" coords="0,0,300,250" target="blank" href="covid.html" class="map1">
         </map>
@@ -119,7 +130,7 @@
                 <marquee behavior="scroll" direction="left"><font face="Times New Roman" color="green" size="5">Maintain Social Distancing!  Wear Mask!!  Let's fight against COVID!!!</font></marquee>
                 <table align="center">
             <tr>
-                <td><h3><font size="8">AREA wise Cases :</font></h3>
+                <td><h3><a href="cbe.html" target="_blank"><font size="8">AREA wise Cases :</font></a></h3>
                     <script type="text/javascript">
                     function search()
                     {
@@ -143,8 +154,11 @@
                         }
                         else if(a=="Valparai"){
                             open("6.html");
-                        } else {
-                            document.write("Sorry, Entered area doesn't exist");
+                        } 
+                        else if(a==0){
+                            open("index.html");
+                        }else {
+                            open("notexist.html");
                         }
 
                     }
@@ -153,7 +167,11 @@
                        <button onclick="search()">Click here to search by area</button><br>
                         <br>
                 <iframe src="cases.html" width="500" height="200" style="border:double black 1px;"></iframe>
-            <td><img src="cbepic.png" height="300" width="250" align="left"></td>
+            <td><img src="cbepic.png" height="300" width="250" align="left" usemap="#pic">
+                <map name="pic">
+                    <area shape="rect" coords="0,0,250,300" target="blank" href="cbe.html">
+                </map>
+            </td>
         </font></p></tr></table></div></div>  
                 <br><br>
         <div class="rightcolumn">
@@ -171,7 +189,7 @@
         </div>
         <div class="leftcolumn"> 
             <marquee behavior="scroll" direction="right"><font face="Times New Roman" color="red" size="6">Get vaccinated !!</font></marquee>  
-        <div class="cardl">
+        <div class="cardl1">
         <table>
             <tr> 
                 <td>
@@ -294,7 +312,12 @@
        <map name="mask" class="map1">
            <area shape="rect" title="MASK" coords="70,45,140,90" target="blank" href="mask.html" class="map">
        </map>
-       <form style="text-align:center;background-color:black;" method="POST" action="submit.html"> 
+       <form style="text-align:center;background-color:black;" method="POST" action="submit.html" onsubmit="return validateForm()"> 
+        <script>
+            function validateForm(){
+
+            }
+        </script> 
         <fieldset>
             <legend>
                <font color="white" size="4">Want to recieve updates  ??</font> 
@@ -304,13 +327,13 @@
             <div class="form-popup" id="myForm">
                   <h1 style="text-align: center;">Register</h1>
                   <label for="name1"><b>First Name :</b></label>
-                  <input type="text" name="name1" id="fname" required size="30" onfocusin="myfocus(this)" onblur="myblur(this)"><br><br>
+                  <input type="text" placeholder="Enter your first name" name="name1" id="fname" required size="30" onfocusin="myfocus(this)" onblur="myblur(this)"><br><br>
                   <label for="name2"><b>Last Name :</b></label>
-                  <input type="text" name="name2" id="lname" required size="30" onfocusin="myfocus(this)" onblur="myblur(this)"><br><br>
+                  <input type="text" placeholder="Enter your last name" name="name2" id="lname" required size="30" onfocusin="myfocus(this)" onblur="myblur(this)"><br><br>
                   <label for="email"><b>Email :</b></label>
                   <input type="email" placeholder="Enter Email" name="email" required size="30" onfocusin="myfocus(this)"><br><br>
                   <label for="mobile"><b>Mobile number :</b></label>  
-                  <input type="tel" name="mobile" pattern="[0-9]{10}" required size="30" onfocusin="myfocus(this)"><br><br><br>
+                  <input type="tel" placeholder="Enter your mobile number" name="mobile" pattern="[0-9]{10}" required size="30" onfocusin="myfocus(this)"><br><br><br>
                   <button type="submit" class="btn" >Register</button>&emsp;
                   <button type="button" class="btn" onclick="closeForm()">Close</button>
                 </form>
