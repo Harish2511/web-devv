@@ -104,7 +104,7 @@ tr:nth-child(even) {background-color: #b84040;}
            <hr> 
           <h3 style="color: red;"> <marquee behaviour="scroll" direction="left"><p> COVID Vaccination:PRECAUTIONS & ELIGIBILTIY :<a href="d.html" onclick="return confirm('Are you sure you want to open this page?')"><font color="blue">Click here</font></a></p></marquee></h3>
            <hr>
-           <form style="text-align:center;background-color:black;" method="POST" action="submitreg.html" onsubmit="return validateForm()">
+           <form style="text-align:center;background-color:black;" method="POST" action="submitreg.html" name="myform1" onsubmit="return validateForm()">
             <div class="form-popup" id="myForm">
                <h1 style="text-align: center;">Register</h1>
                <label for="name1"><b>First Name :</b></label>
@@ -146,6 +146,30 @@ tr:nth-child(even) {background-color: #b84040;}
                   b.style.background="pink";
                   b.style.border=" solid 2px red";
                }     
+               function validateForm(){
+                var emailID = document.myform1.email.value;
+              atpos = emailID.indexOf("@");
+              dotpos = emailID.lastIndexOf(".");
+            var nam1=document.myform1.name1.value;
+             var nam2=document.myform1.name2.value;
+             var mail=document.myform1.email.value;
+             var mob=document.myform1.mobile.value;
+             var dob1=document.myform1.dob.value;
+             var dataPreview = "You've entered the following details: \n" +
+                          "First Name: " + nam1 + "\n" +
+                          "Last Name: " + nam2 + "\n" +
+                          "Mail Address: " + mail + "\n" +
+                          "Mobile Number: " + mob + "\n" +
+                          "DOB: " + dob1 + "\n";
+              if (atpos < 1 || ( (dotpos - atpos) < 2 )) {
+            alert("Please enter valid email ID");
+             return false;}
+             else{
+                alert(dataPreview);
+                   return true;
+                   
+             }
+               }
                </script>
            <p class="cl"><font size="8"><u>Vaccination Centers in Coimbatore:</u></font></p>
            <center><font size="5">

@@ -3,7 +3,9 @@
     <head>
         <meta charset="utf-8">
         <style>
-            
+            .im1{
+               border: #0d1137 40px solid; 
+            }
             .cardl1{ 
        background-clip:border-box;
        border: dotted 5px black;
@@ -54,7 +56,7 @@
                             }      
         </script>
     </head>
-    <body style="font-family: 'Times New Roman', Times, serif;overflow-x: hidden;"  onbeforeunload="return tq()" >  
+    <body style="font-family: 'Times New Roman', Times, serif;overflow-x: hidden;" onbeforeunload="return tq()">  
         <button onclick="topFunction()" id="myBtn" title="Go to top">▲</button>
         <script type="text/javascript" src="scroll.js">
         </script>    
@@ -101,14 +103,15 @@
                 </td>
                 <td>
                     <marquee behaviour="scroll" direction="up"><ul type="square">
-                    <font size="6" color="#0d1137"><li>The daily caseload of COVID-19 breached the<br> 5,000-mark  in Coimbatore</li>
-                        <li>Officially,covid19 toll in peak</li>
-            <li>Coimbatore continues to see a surge !!!</li></font></ul></marquee></td>
+                    <font size="6" color="#0d1137"><li>Coimbatore: Heightened vigil despite drop<br> in new Covid cases</li>
+                        <li>The decline in daily Covid-19 cases in the <br>district appeared to be slow but steady</li>
+            <li>Coimbatore tops state with 252 fresh Covid-19 cases</li></font></ul></marquee></td>
                     </tr>
         </table></div></div>
     <div class="rightcolumn">
         <div class="cardr">
             <p style="text-align: center;"><img src="divright1.gif" width="300" height="250" ></p>
+            <br>
         </div></div>
         <div class="leftcolumn">
             <div class="cardl1">
@@ -211,13 +214,15 @@
         </div>
         <br><br>
         <hr>
-        <h2 style="text-align: center;" id="gallery"><font size="8" face="Times New Roman" color="red">!------Gallery------!</font></h2>
+        <h2 style="text-align: center;" id="gallery"><font size="8" face="cursive" color="red">!------Gallery------!</font></h2>
         
         <table  align="center">
+            
             <div class="slideshow-container">
-
+                <div class="im1">
                 <div class="mySlides">
                   <div class="numbertext">1 / 4</div>
+                 
                   <img src="san.jpg" style="width:100%" usemap="#san" class="map1"> 
                   <map name="san">
                     <area shape="rect" title="NEWS -1" coords="0,0,400,300" target="blank" href="san.html">
@@ -243,7 +248,7 @@
                 <map name="pica" class="map1">
                     <area shape="rect" title="NEWS -4" coords="0,0,400,300" target="blank" href="pica.html">
                 </map>
-              </div></div>
+              </div></div></div>
                 <br>
                 <script type="text/javascript">
                     var slideIndex = 0;
@@ -292,9 +297,9 @@
                 </map></tr>--->
                <tr>
                     <td colspan="2">
-                        <table border="2" align="center">
+                        <table border="2" align="center" style="background: #F49F1C;">
                             <tr><td>
-                              <p style="text-align: center;color: red;"><font size="6">Want to know more about covid? Watch the video given below......</font></p>
+                              <p style="text-align: center;color:#0d1137 ;"><font size="6">Want to know more about covid? Watch the video given below......</font></p>
                            <center>
                                 <video id="vid" class="center" width="700" height="600" controls source src="corona.mp4" type="video/mp4" onplay="vid()" onended="end()"></video>
                             </center></td></tr>
@@ -312,28 +317,24 @@
        <map name="mask" class="map1">
            <area shape="rect" title="MASK" coords="70,45,140,90" target="blank" href="mask.html" class="map">
        </map>
-       <form style="text-align:center;background-color:black;" method="POST" action="submit.html" onsubmit="return validateForm()"> 
-        <script>
-            function validateForm(){
-
-            }
-        </script> 
+      
+       <form style="text-align:center;background-color:black;" method="POST" action="submit.html" name="myform1" onsubmit=" return validateForm()"> 
         <fieldset>
             <legend>
                <font color="white" size="4">Want to recieve updates  ??</font> 
             </legend>
             <br>
             <p><font size="6" color="white"><button onclick="openForm()" class="obutton">Register</button> here to get Continuous updates!! </font></p>
-            <div class="form-popup" id="myForm">
+            <div class="form-popup" id="myForm" name=" myform1">
                   <h1 style="text-align: center;">Register</h1>
                   <label for="name1"><b>First Name :</b></label>
-                  <input type="text" placeholder="Enter your first name" name="name1" id="fname" required size="30" onfocusin="myfocus(this)" onblur="myblur(this)"><br><br>
+                  <input type="text" placeholder="Enter your first name" name="name1" id="fname"  size="30" onfocusin="myfocus(this)" onblur="myblur(this)" required><br><br>
                   <label for="name2"><b>Last Name :</b></label>
-                  <input type="text" placeholder="Enter your last name" name="name2" id="lname" required size="30" onfocusin="myfocus(this)" onblur="myblur(this)"><br><br>
+                  <input type="text" placeholder="Enter your last name" name="name2" id="lname"  size="30" onfocusin="myfocus(this)" onblur="myblur(this)" required><br><br>
                   <label for="email"><b>Email :</b></label>
-                  <input type="email" placeholder="Enter Email" name="email" required size="30" onfocusin="myfocus(this)"><br><br>
+                  <input type="text" placeholder="Enter Email" name="email"  size="30" onfocusin="myfocus(this)" required><br><br>
                   <label for="mobile"><b>Mobile number :</b></label>  
-                  <input type="tel" placeholder="Enter your mobile number" name="mobile" pattern="[0-9]{10}" required size="30" onfocusin="myfocus(this)"><br><br><br>
+                  <input type="tel" placeholder="Enter your mobile number" name="mobile" pattern="[0-9]{10}"  size="30" onfocusin="myfocus(this)" required><br><br><br>
                   <button type="submit" class="btn" >Register</button>&emsp;
                   <button type="button" class="btn" onclick="closeForm()">Close</button>
                 </form>
@@ -354,7 +355,32 @@
               {
                  b.style.background="pink";
                  b.style.border=" solid 2px red";
-              }     
+              } 
+              function validateForm(){
+                var emailID = document.myform1.email.value;
+              atpos = emailID.indexOf("@");
+              dotpos = emailID.lastIndexOf(".");
+            var nam1=document.myform1.name1.value;
+             var nam2=document.myform1.name2.value;
+             var mail=document.myform1.email.value;
+             var mob=document.myform1.mobile.value;
+             var dataPreview = "You've entered the following details: \n" +
+                          "First Name: " + nam1 + "\n" +
+                          "Last Name: " + nam2 + "\n" +
+                          "Mail Address: " + mail + "\n" +
+                          "Mobile Number: " + mob + "\n";
+              if (atpos < 1 || ( (dotpos - atpos) < 2 )) {
+            alert("Please enter valid email ID");
+             return false;}
+             else{
+                alert(dataPreview);
+                   return true;
+                   
+             }
+            
+                          
+                }
+                
               </script>
               
             <br>
