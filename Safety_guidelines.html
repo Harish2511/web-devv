@@ -99,7 +99,53 @@
                 </script>
 
        <br><h1 style="color:orangered;font-family:cursive;text-align: center;font-size: 50px;">Safety Guidelines</h1>
-        
+       <br>
+       <div class="slideshow-container">
+        <div class="im1">
+        <div class="mySlides">
+          <div class="numbertext">1 / 5</div>
+         
+          <img src="1.jpg" style="width:100%" usemap="#san" class="map1"> 
+          
+        </div>
+        <div class="mySlides">
+          <div class="numbertext">2 / 5</div>
+          <img src="2.jpg" style="width:100%" usemap="#yoga" class="map1">  
+          
+        </div>   
+        <div class="mySlides">
+          <div class="numbertext">3 / 5</div>
+          <img src="3.jpg" style="width:100%" usemap="#covi" class="map1">
+          
+        </div>
+        <div class="mySlides">
+        <div class="numbertext">4 / 5</div>
+        <img src="4.jpg" style="width:100%" usemap="#pica" class="map1">
+       
+      </div>
+    </div>
+    <div class="mySlides">
+    <div class="numbertext">5 / 5</div>
+    <img src="5.jpg" style="width:100%" usemap="#pica" class="map1">
+   
+  </div></div></div>
+        <br>
+        <script type="text/javascript">
+            var slideIndex = 0;
+            showSlides();
+            
+            function showSlides() {
+              var i;
+              var slides = document.getElementsByClassName("mySlides");
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+              }
+              slideIndex++;
+              if (slideIndex > slides.length) {slideIndex = 1}    
+              slides[slideIndex-1].style.display = "block";  
+              setTimeout(showSlides,5000); // Change image every 5 seconds
+            }
+            </script> 
         
     <p style="text-align: center;"><font size="4" color="red">If COVID-19 is spreading in your community, stay safe by taking some simple precautions listed below:</font></p>
         <table border="1" align="center"><tr><td><ol style="font-size: x-large;"><b>
