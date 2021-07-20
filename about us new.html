@@ -1,86 +1,187 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+      <script src="script.js"></script>
+      
+      
+        <link rel="stylesheet" href="box.css">
         <meta charset="utf-8">
-        <title>About us</title>
+        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="social.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="popup.css">
+        <title>About us</title>
         <style>
-            .im1{
-                border: #0d1137 40px solid;
-            }
-        </style>
+          .im1{
+              border: #0d1137 40px solid;
+          }
+      </style>
+        
     </head>
-   
-    <body style="font-family: Georgia, 'Times New Roman', Times, serif;">
-            <button onclick="topFunction()" id="myBtn" title="Go to top">▲</button>
-            <script type="text/javascript" src="scroll.js">
-            </script>    
-                   <div class="title">
-                    <h1 style="text-align: center;"><a href="covid.html"><span class="headcov">COVID19 </span></a><a href="https://en.wikipedia.org/wiki/Coimbatore">
-                        <span class="headcoi">COIMBATORE</span></font> </a></h1></div>
-                        <div class="header"><div id="mySidepanel" class="sidepanel">
-                                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-                                <a href="index.html">Home</a>
-                                <a href="about us new.html">About us</a>
-                                <a href="index.html#gallery">Gallery</a>
-                                <a href="#contact">Contact</a>
-                              </div>
-                            <p style="float: left;background-color: black;"><button class="openbtn" onclick="openNav()" >☰ Menu</button></p></div>
-                            <script>
-                                function openNav() {
-                                  document.getElementById("mySidepanel").style.width = "250px";
-                                }
-                                
-                                function closeNav() {
-                                  document.getElementById("mySidepanel").style.width = "0";
-                                }
+    <body style="font-family: 'Times New Roman', Times, serif;overflow-x: hidden;" onbeforeunload="return tq()">  
+        <button onclick="topFunction()" id="myBtn" title="Go to top">▲</button>
+        <script type="text/javascript" src="scroll.js">
+        </script>    
+               <div class="title">
+                <h1 style="text-align: center;"><a href="covid.html"><span class="headcov">COVID19 </span></a><a href="https://en.wikipedia.org/wiki/Coimbatore">
+                    <span class="headcoi">COIMBATORE</span></font> </a></h1></div>
+                    <div class="header"><div id="mySidepanel" class="sidepanel">
+                            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+                            <a href="#">Home</a>
+                            <a href="about us new.html">About us</a>
+                            <a href="index.html#gallery">Gallery</a>
+                            <a href="#contact">Contact</a>
+                          </div>
+                        <p style="float: left;background-color: black;"><button class="openbtn" onclick="openNav()" >☰ Menu</button></p></div>
+                        <script>
+                            function openNav() {
+                              document.getElementById("mySidepanel").style.width = "250px";
+                            }
                             
-                                </script>
-           <br>
-        <p style="text-align: center;"><img align="center" src="team.png" height="550" width="950" class="im1"></p>
+                            function closeNav() {
+                              document.getElementById("mySidepanel").style.width = "0";
+                            }
+                            function vid(){
+                                alert("Video started playing....");
+                            }
+                            function end(){
+                                alert("Video has ended");
+                            }
+                            </script>
+                        <br><br><br><br>
+                        <br>
+                        <h1 style="text-align:center;"><a href="https://www.who.int/about"><font color="black" face="cursive"> About us</font></a></h1> 
+                    
+                    </fieldset>
+               </form>
+               <p style="text-align: center;"><img align="center" src="team.png" height="550" width="950" class="im1"></p>
 
         <p><font face="cursive" size="5" color="#0d1137"><ul type="disc" style="background: #F49F1C;"><br><b><li>We as a team of 5 members have put together a website that can give all relevant details about the current pandemic at district level.</li>
             <li> Our journey started of as an idea to come up with a website that is useful for the public during the ongoing pandemic.</li>
              <li>A lot of information is to be shared with everyone about Covid-19 starting off from precautions to vaccine details.</li>
               <li>We divided covid into different subtopics and researched thoroughly and have come up with a website containing all the information regarding Covid-19.</li><li> It took us a span of over 4 weeks to put together this project seamlessly.</li><li>Thanks to Manjusha ma'am for providing us this opportunity.</li><br></p></ul></b></font></p>
-              <footer class="footer1">
-                <p>
-             <div class="footerl">
-        
-                 <h3 style="font-family:cursive;margin-top:99px;">Covid<span style="color: red;">Coimbatore</span></h3>
-                 
-                 <p class="footer-links">
-                 <a href="index.html">Home</a>
-                 +
-                 <a href="about us new.html">About us</a>
-                 +
-                 <a href="index.html#gallery">Gallery</a>
-                 +
-                 <a href="#contact">Contact</a>
-                 </p>
-                 <p style=" color:  #8f9296;
-        font-size: 14px;
-        font-weight: normal;">Covid Coimbatore &copy; 2021</p>
-                 </div>
-                                     <div class="footerc" style="height: 263px;">
-                                          <p id="contact" style="text-align: center;font-family:cursive;color: red;"><u>CONTACT US</u></p><br>
-                                             <p style="text-align: center;font-size: 15px;"><i class="fa fa-address-book-o" style="font-size:20px;margin-top: -100px"></i>Harish-xxxxxxxxxx</p>                                 
-                                             <p style="text-align: center;font-size: 15px;"><i class="fa fa-address-book-o" style="font-size:20px;margin-top: -100px"></i>Sharon-xxxxxxxxxx</p>
-                                                 
-                                                 <p style="text-align: center;font-size: 15px;"><i class="fa fa-address-book-o" style="font-size:20px;margin-top: -100px"></i>Dheepthi-xxxxxxxxx</p>
-                                                 
-                                                     <p style="text-align: center;font-size: 15px;"><i class="fa fa-address-book-o" style="font-size:20px;margin-top: -100px"></i>Utkarsh-xxxxxxxxxx</p>
-                                                 
-                                                         <p style="text-align: center;font-size: 15px;"><i class="fa fa-address-book-o" style="font-size:20px;margin-top: -100px"></i> Vinusha-xxxxxxxxx</p>
-                                     </p></div>
-                                             <div class="footerr" style="vertical-align: middle;margin-top:60px;">
-                                                 <h3 style="font-family:cursive;">Follow us on:</h3>
-                                                 <p style="text-align: center;vertical-align: middle;"><a href="https://www.facebook.com/profile.php?id=100070914073510" class="fa fa-facebook" style="vertical-align: middle;"></a>
-                                                 <a href="https://www.instagram.com/team_covid_cbe/" class="fa fa-instagram" style="vertical-align:middle ;"></a>
-                                                 <a href="https://www.twitter.com/" class="fa fa-twitter" style="vertical-align: middle;"></a></p>
-                                            </div>                       
-                                             </p></footer>
-        </body>
-        </html>
+                     <table class="center">
+                      <thead>
+                      <th></th>
+                      <th></th>
+                      
+                      </thead>
+                      <tbody>
+                      <tr>
+                      <td><svg width="700" height="210" >
+                        <rect width="600" height="200" rx="20px" ry="20px" style="fill:#F49F1C;stroke-width:3;stroke:rgb(0,0,0)" />
+                         <text fill="#0d1137" x="30%" y="30%"  dominant-baseline="middle" text-anchor="middle"font-size="2em"><tspan x="40%" y="50%">Header,Footer,form and Homepage</tspan> </text>
+                      </svg></td><td><h1 style="text-align:center"> Harish </h1></td>
+                      
+                      </tr>
+                      <tr>
+                      <td><h1 style="text-align:center"> Sharon </h1></td>
+                      <td><svg width="700" height="210" >
+                        <rect width="600" height="200" rx="20px" ry="20px" style="fill:#F49F1C;stroke-width:3;stroke:rgb(0,0,0)" />
+                         <text fill="#0d1137" x="30%" y="30%"  dominant-baseline="middle" text-anchor="middle" font-size="2em">Covid page,<tspan x="40%" y="50%">Mask page</tspan></text>
+                      </svg></td>
+                    
+                      
+                      </tr>
+                      <tr>
+                      <td><svg width="700" height="210" >
+                        <rect width="600" height="200" rx="20px" ry="20px" style="fill:#F49F1C;stroke-width:3;stroke:rgb(0,0,0)" />
+                         <text fill="#0d1137" x="30%" y="30%"  dominant-baseline="middle" text-anchor="middle" font-size="2em">Vaccination details</text>
+                      </svg></td>
+                      <td><h1 style="text-align:center"> Dheepthi </h1></td>
+                      
+                      </tr>
+                      <tr>
+                      <td><h1 style="text-align:center"> Vinusha </h1</td>
+                      <td><svg width="700" height="210" >
+                        <rect width="600" height="200" rx="20px" ry="20px" style="fill:#F49F1C;stroke-width:3;stroke:rgb(0,0,0)" />
+                         <text fill="#0d1137" x="30%" y="30%"  dominant-baseline="middle" text-anchor="middle"font-size="2em">   Area wise cases in Coimbatore<tspan x="40%" y="50%">and About us page</tspan></text>
+                      </svg></td>
+                      
+                      </tr>
+                      <tr>
+                        <td><svg width="700" height="210" >
+                          <rect width="600" height="200" rx="20px" ry="20px" style="fill:#F49F1C;stroke-width:3;stroke:rgb(0,0,0)" />
+                           <text fill="#0d1137" x="30%" y="30%"  dominant-baseline="middle" text-anchor="middle" font-size="2em">Safety Guidelines</text>
+                        </svg></td>
+                        <td><h1 style="text-align:center"> Utkarsh </h1></td>
+                        
+                     
+                      </tbody>
+                      </table>
+                    
+                          
+                     
+                    
+                     <h2 style="text-align: center;">FAQs</h2>
+
+                     <p style="text-align: center;"><button onclick="revealMessage()">What is Covid-19?</button>
+                        <p id="hiddenMessage" style="display:none">COVID-19 is a disease caused by a virus called SARS-CoV-2. Most people with COVID-19 have mild symptoms, but some people can become severely ill. Although most people with COVID-19 get better within weeks of illness, some people experience post-COVID conditions. Post-COVID conditions are a wide range of new, returning, or ongoing health problems people can experience more than four weeks after first being infected with the virus that causes COVID-19. Older people and those who have certain underlying medical conditions are more likely to get severely ill from COVID-19. Vaccines against COVID-19 are safe and effective.</p>
+                       </p>
+                       <p style="text-align: center;"><button onclick="revealMessage1()">How does the virus spread?</button>
+                        <p id="hiddenMessage1" style="display:none"> The virus spreads mainly between people who are in close contact with each other, typically within 1 metre (short-range). A person can be infected when aerosols or droplets containing the virus are inhaled or come directly into contact with the eyes, nose, or mouth.
+                            </p>
+                            <p style="text-align: center;"><button onclick="revealMessage2()">Precautions to be taken</button>
+                                <p id="hiddenMessage2" style="text-align: center;" style="display:none"><a href="protect.html">Follow this page</a></p>
+              
+              <script>
+              function openForm() {
+                document.getElementById("myForm").style.display = "block";
+              }
+              
+              function closeForm() {
+                document.getElementById("myForm").style.display = "none";
+              }
+              function myblur(a) {
+          a.value=a.value.toUpperCase();
+}         
+              function myfocus(b)
+              {
+                 b.style.background="pink";
+                 b.style.border=" solid 2px red";
+              }     
+              </script>
+              
+            <br>
+            </fieldset>
+   </form>
+       <footer class="footer1">
+           <p>
+        <div class="footerl">
+ 
+            <h3 style="font-family:cursive;margin-top:99px;">Covid<span style="color: red;">Coimbatore</span></h3>
+            
+            <p class="footer-links">
+            <a href="index.html">Home</a>
+            +
+            <a href="about us new.html">About us</a>
+            +
+            <a href="index.html#gallery">Gallery</a>
+            +
+            <a href="#contact">Contact</a>
+            </p>
+            <p style=" color:  #8f9296;
+ font-size: 14px;
+ font-weight: normal;">Covid Coimbatore &copy; 2021</p>
+            </div>
+                                <div class="footerc" style="height: 263px;">
+                                     <p id="contact" style="text-align: center;font-family:cursive;color: red;"><u>CONTACT US</u></p><br>
+                                        <p style="text-align: center;font-size: 15px;"><i class="fa fa-address-book-o" style="font-size:20px;margin-top: -100px"></i>Harish-xxxxxxxxxx</p>                                 
+                                        <p style="text-align: center;font-size: 15px;"><i class="fa fa-address-book-o" style="font-size:20px;margin-top: -100px"></i>Sharon-xxxxxxxxxx</p>
+                                            
+                                            <p style="text-align: center;font-size: 15px;"><i class="fa fa-address-book-o" style="font-size:20px;margin-top: -100px"></i>Dheepthi-xxxxxxxxx</p>
+                                            
+                                                <p style="text-align: center;font-size: 15px;"><i class="fa fa-address-book-o" style="font-size:20px;margin-top: -100px"></i>Utkarsh-xxxxxxxxxx</p>
+                                            
+                                                    <p style="text-align: center;font-size: 15px;"><i class="fa fa-address-book-o" style="font-size:20px;margin-top: -100px"></i> Vinusha-xxxxxxxxx</p>
+                                </p></div>
+                                        <div class="footerr" style="vertical-align: middle;margin-top:60px;">
+                                            <h3 style="font-family:cursive;">Follow us on:</h3>
+                                            <p style="text-align: center;vertical-align: middle;"><a href="https://www.facebook.com/" class="fa fa-facebook" style="vertical-align: middle;"></a>
+                                            <a href="https://www.instagram.com/" class="fa fa-instagram" style="vertical-align:middle ;"></a>
+                                            <a href="https://www.twitter.com/" class="fa fa-twitter" style="vertical-align: middle;"></a></p>
+                                       </div>                       
+                                        </p></footer>
+       </body>
+</html>
